@@ -52,5 +52,15 @@ trait UserTrait {
 	{
 		return 'remember_token';
 	}
+	
+	public function getCreatedAt()
+	{
+	return $this->created_at->format('d. M. Y H:i:s');
+	}
+	
+	public function getLang()
+	{
+	return $this->lang;
+	}
 
 }
